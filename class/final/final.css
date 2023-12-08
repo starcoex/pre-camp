@@ -1,0 +1,16 @@
+body {
+  background-color: tomato;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1024px;
+}
+.signup {
+  display: flex;
+  flex-direction: column;
+}
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}

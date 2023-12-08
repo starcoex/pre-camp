@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./final.css" rel="stylesheet" />
+    <script src="./final.js"></script>
+    <title>Final</title>
+  </head>
+  <body>
+    <h1>코드 캠프 회원가입</h1>
+    <div class="signup">
+      <div class="signup-form">
+        <input
+          type="email"
+          name=""
+          id="email"
+          placeholder="이메일을 입력해 주세요"
+          oninput="checkValidation()"
+        />
+        <input
+          type="text"
+          name=""
+          id="name"
+          placeholder="이름을 입력해 주세요"
+          oninput="checkValidation()"
+        />
+        <input
+          type="password"
+          name=""
+          id="password"
+          placeholder="비밀번호을 입력해 주세요"
+          oninput="checkValidation()"
+        />
+        <input
+          type="password"
+          name=""
+          id="passwordConfirm"
+          placeholder="비밀번호을 다시 입력해 주세요"
+          oninput="checkValidation()"
+        />
+      </div>
+
+      <div>
+        <input
+          type="text"
+          id="firstPhoneNumber"
+          oninput="changeFocus()"
+          maxlength="3"
+        /><span>-</span>
+        <input
+          type="text"
+          id="secondPhoneNumber"
+          oninput="changeFocus2()"
+          maxlength="4"
+        /><span>-</span>
+        <input type="text" id="threePhoneNumber" maxlength="4" />
+      </div>
+
+      <span id="target">00000</span>
+      <button onclick="auth()">인증번호 전송</button>
+      <span id="timer">3:00</span>
+      <button id="finish">인증확인</button>
+      <select name="" id="">
+        <option>지역을 선택해 주세요</option>
+        <option>서울</option>
+        <option>경기</option>
+        <option>제주</option>
+      </select>
+    </div>
+    <input type="radio" name="gender" id="woman" value="woman" />
+    <label for="woman">여성</label>
+    <input type="radio" id="man" name="gender" value="man" />
+    <label for="man">남성</label>
+
+    <div>
+      <button disabled="true" id="submit">가입하기</button>
+    </div>
+  </body>
+</html>
